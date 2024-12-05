@@ -40,24 +40,22 @@
       
 
       <div class="medals">
-        
         <div class="medal silver">
           <span>2°</span>
-              <p>Paula</p>
+          <p></p>
+        </div>
+      
+        <div class="primeiro">
+          <div class="medal gold">
+            <span>1°</span>
+            <p></p>
           </div>
-
-          <div class="primeiro">
-              <div class="medal gold">
-              <span>1°</span>
-              <p>Bruno</p>
-          </div>
-      </div>
-
-          <div class="medal bronze">
-              <span>3°</span>
-              <p>Gabriel</p>
-          </div>
-
+        </div>
+      
+        <div class="medal bronze">
+          <span>3°</span>
+          <p></p>
+        </div>
       </div>
       
       <table class=" u-full-width">
@@ -68,38 +66,13 @@
                   <th>Pontos</th>     
               </tr>
           </thead>
-          <tbody>
-              <tr>
-                  <td style="color: #ffd700;">1°</td>
-                  <td style="color: #ffd700;">Bruno</td>
-                  <td style="color: #ffd700;">2450</td>         
-              </tr>
-              <tr>
-                  <td style="color: #c0c0c0;">2°</td>
-                  <td style="color: #c0c0c0;">Paula</td>
-                  <td style="color: #c0c0c0;">2230</td>
-              </tr>
-              <tr>
-                  <td style="color: #cd7f32;">3°</td>
-                  <td style="color: #cd7f32;">Gabriel</td>
-                  <td style="color: #cd7f32;">2020</td>
-              </tr>
-              <tr>
-                  <td>4°</td>
-                  <td>João</td>
-                  <td>1950</td>
-              </tr>
-              <tr>
-                  <td>5°</td>
-                  <td>Samuel</td>
-                  <td>1870</td>
-              </tr>
+          <tbody id="ranking">
           </tbody>
       </table>
       
       <div class="dash">
           <button class="bt" style="color: #c0c0c0; border-color: #c0c0c0;"> < Voltar</buntton>
-          <button class="bt" style="color: #cd7f32; border-color: #cd7f32;">Recarregar</button>
+          <button class="bt" style="color: #cd7f32; border-color: #cd7f32;" onclick="fetchData()">Recarregar</button>
           <button class="bt" style="color: #ffd700; border-color: #ffd700;" >Proxima > </button>
       </div>
     </div>
@@ -147,5 +120,7 @@
           </div>
           </footer>
         
+          <script src="/script/script.js"></script>
+
 </body>
 </html>
